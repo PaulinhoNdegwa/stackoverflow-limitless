@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>StackOverflow-Lite</title>
+
+    <!-- Link to font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Links to our main css-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!--Link to javascript file-->
+    <script src="js/main.js"></script>
+
+
+
+</head>
+<body>
+	<div>
+		<nav class="navbar" id="myNavbar">
+		      <a href="index.html"><img src="" height="60">StackOverflow-Lite - Home</a>		      
+		      <a href="newquestion.html" id="login">Ask Question</a>		      
+		      <a href="register.html" id="login">Sign up</a>		      
+		      <a href="login.html" id="register">Log in</a>
+		      <a href="javascript:void(0)" class="icon" onclick="toogleMenu()"><i class="fa fa-bars"></i></a>
+		 </nav>
+	</div>
+	<div class="main">
+		 <div class="header">
+		 	<h1>Welcome to StackOverFlow-Lite</h1>
+			<h4>Ask questions and learn! </h4>
+		 </div>
+		 <br>
+		
+		<div class="questioncard">
+			<h3>How to install python on windows 7</h3>
+			<p>I want to work on apython project but i cannot figure out how to install python on win 7</p><br>
+			<a href="#" id="greenbutton">Answer</a><br><br>
+		</div>
+		<br>
+		<div class="questioncard">
+			<h3>How to install python on windows 7</h3>
+			<p>I want to work on apython project but i cannot figure out how to install python on win 7</p><br>
+			<a href="#" id="greenbutton">Answer</a><br><br>
+		</div>
+		<br>
+		<div class="questioncard">
+			<h3>How to install python on windows 7</h3>
+			<p>I want to work on apython project but i cannot figure out how to install python on win 7</p><br>
+			<a href="#" id="greenbutton">Answer</a><br><br>
+		</div>
+		<br>
+		<div class="questioncard">
+			<h3>How to install python on windows 7</h3>
+			<p>I want to work on apython project but i cannot figure out how to install python on win 7</p><br>
+			<a href="#" id="greenbutton">Answer</a><br><br>
+		</div>
+		<br>
+	</div>
+
+
+</body>
+</html>
+<!-- This function toggles the class of myNavbar between adding and removing the responsive class -->
+<script type="text/javascript">
+	function toogleMenu() {
+	    var x = document.getElementById("myNavbar");
+	    if (x.className === "navbar") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "navbar";
+	    }
+	}
+</script>
