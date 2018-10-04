@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>StackOverflow-Lite</title>
+
+    <!-- Link to font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Links to our main css-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!--Link to javascript file-->
+    <script src="js/main.js"></script>
+
+
+
+</head>
+<body>
+	<div>
+		<nav class="navbar" id="myNavbar">
+		    <a href="index.html"><img src="" height="60">StackOverflow-Lite - Home</a>
+            <a href="login.html" id="login">Login</a>
+		    <a href="javascript:void(0)" class="icon" onclick="toogleMenu()"><i class="fa fa-bars"></i></a>
+		 </nav>
+	</div>
+	<div class="main">
+		 <div class="header">
+		 	<h1>Signup</h1>
+			<h4>Enter your details below to signup</h4>
+		 </div>
+		 <br>
+		
+		<div >
+			<form method="POST" class="formdiv" action="login.html">
+				<label for="name">Enter Full Name: </label>
+				<input  type="text" name="name" id="name" placeholder="Enter Your Name" required>
+				<label for="email">Enter Email: </label>
+				<input  type="email" name="email" id="email" placeholder="Enter Email Adress" required>
+				<label for="password">Enter Password: </label>
+				<input  type="password" name="password" id="password" placeholder="Enter Password" required>
+				<label for="confirm_password">Confirm Password: </label>
+				<input  type="password" name="confirm_password" id="confirm_password" placeholder="Re-enter Password " required>
+				<input type="submit" value="Register">
+				<br>
+				<a href="login.html">Already have an account?</a>
+			</form>
+		</div>
+	</div>
+
+
+</body>
+</html>
+<!-- This function toggles the class of myNavbar between adding and removing the responsive class -->
+<script type="text/javascript">
+	function toogleMenu() {
+	    var x = document.getElementById("myNavbar");
+	    if (x.className === "navbar") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "navbar";
+	    }
+	}
+</script>
